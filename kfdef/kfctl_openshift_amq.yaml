@@ -25,8 +25,8 @@ spec:
       - name: namespace
         value: openshift-operators
       repoRef:
-        name: manifests
-        path: kafka/cluster
+        name: custom-manifests
+        path: amq-streams/cluster
     name: strimzi-operator
   - kustomizeConfig:
       repoRef:
@@ -110,5 +110,5 @@ spec:
   - name: manifests
     uri: https://github.com/opendatahub-io/odh-manifests/tarball/master
   - name: custom-manifests
-    uri: https://github.com/pmalan/odh-manifest/odh-manifests/tarball/master
+    uri: https://github.com/pmalan/odh-manifest/tarball/master
   version: master
