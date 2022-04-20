@@ -8,4 +8,7 @@ resources:
   - jaeger.yaml
   - kiali.yaml
   - servicemesh.yaml
+  - namespace.yaml
+  - memberroll.yaml
+  - servicemeshconfig.yaml
 
