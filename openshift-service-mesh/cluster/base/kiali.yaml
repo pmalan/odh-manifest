@@ -6,7 +6,6 @@ metadata:
   namespace: openshift-operators
 spec:
   channel: stable
-  installPlanApproval: Automatic
   name: kiali-ossm
   source: redhat-operators
   sourceNamespace: openshift-marketplace

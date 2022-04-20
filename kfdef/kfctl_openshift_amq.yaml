@@ -107,7 +107,7 @@ spec:
     - kustomizeConfig:
         repoRef:
           name: custom-manifests
-          path: openshift-service-mesh
+          path: openshift-service-mesh/cluster
       name: openshift-service-mesh
     - kustomizeConfig:
         parameters:

@@ -14,7 +14,6 @@ metadata:
   namespace: openshift-operators-redhat
 spec:
   channel: stable
-  installPlanApproval: Automatic
   name: elasticsearch-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
