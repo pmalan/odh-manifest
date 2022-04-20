@@ -110,6 +110,11 @@ spec:
           path: openshift-service-mesh/cluster
       name: openshift-service-mesh
     - kustomizeConfig:
+        repoRef:
+          name: custom-manifests
+          path: openshift-service-mesh-config
+      name: openshift-service-mesh-config
+    - kustomizeConfig:
         parameters:
           - name: s3_is_secure
             value: 'false'

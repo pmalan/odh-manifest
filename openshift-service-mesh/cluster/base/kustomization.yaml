@@ -9,6 +9,4 @@ resources:
   - kiali.yaml
   - servicemesh.yaml
   - namespace.yaml
-  - memberroll.yaml
-  - servicemeshconfig.yaml
-
+  
