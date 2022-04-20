@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-system
+  labels:
+    istio-operator-managed: Reconcile
+    istio-injection: disabled
+  annotations:
+    openshift.io/description: ''
+    openshift.io/display-name: 'Service Mesh'
