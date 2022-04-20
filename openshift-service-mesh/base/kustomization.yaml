@@ -6,3 +6,5 @@ namespace: istio-system
 resources:
   - namespace.yaml
   - servicemeshconfig.yaml
+  - memberroll.yaml
+  - gateway.yaml
