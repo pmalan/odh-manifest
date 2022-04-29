@@ -7,7 +7,7 @@ spec:
   applications:
     - kustomizeConfig:
         repoRef:
-          name: manifests
+          name: custom-manifests
           path: odh-common
       name: odh-common
     - kustomizeConfig:
