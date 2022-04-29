@@ -21,19 +21,6 @@ spec:
           path: superset
       name: superset
     - kustomizeConfig:
-        parameters:
-          - name: namespace
-            value: openshift-operators
-        repoRef:
-          name: custom-manifests
-          path: amq-streams/cluster
-      name: strimzi-operator
-    - kustomizeConfig:
-        repoRef:
-          name: custom-manifests
-          path: amq-streams/kafka
-      name: kafka-cluster
-    - kustomizeConfig:
         repoRef:
           name: manifests
           path: grafana/cluster
