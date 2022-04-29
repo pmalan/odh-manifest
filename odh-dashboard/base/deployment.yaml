@@ -30,7 +30,9 @@ spec:
         image: quay.io/opendatahub/odh-dashboard:v1.0
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+          - name: http-odh-db
+            containerPort: 8080
+            protocol: TCP
         resources:
           requests:
             cpu: 200m
