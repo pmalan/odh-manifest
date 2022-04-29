@@ -6,6 +6,7 @@ spec:
   selector:
     deployment: odh-dashboard
   ports:
-  - protocol: TCP
+  - name: http-odh-db
+    protocol: TCP
     targetPort: 8080
     port: 8080
