@@ -5,6 +5,7 @@ metadata:
   name: hue-mysql
   annotations:
     template.alpha.openshift.io/wait-for-ready: "true"
+    
 spec:
   replicas: 1
   selector:
@@ -13,6 +14,8 @@ spec:
     metadata:
       labels:
         deployment: hue-mysql
+        app: hue
+        version: v4.10.0
     spec:
       containers:
         - name: mysqld-exporter
