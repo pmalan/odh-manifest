@@ -203,7 +203,7 @@ metadata:
   name: argo-server
 spec:
   ports:
-  - name: web
+  - name: hhtp-web
     port: 2746
     targetPort: 2746
   selector:
@@ -215,7 +215,7 @@ metadata:
   name: workflow-controller-metrics
 spec:
   ports:
-  - name: metrics
+  - name: http-metrics
     port: 9090
     protocol: TCP
     targetPort: 9090
@@ -243,7 +243,7 @@ spec:
         name: argo-server
         ports:
         - containerPort: 2746
-          name: web
+          name: http-web
         readinessProbe:
           httpGet:
             path: /
@@ -295,7 +295,7 @@ spec:
         name: workflow-controller
         ports:
         - containerPort: 9090
-          name: metrics
+          name: http-metrics
       nodeSelector:
         kubernetes.io/os: linux
       securityContext:
