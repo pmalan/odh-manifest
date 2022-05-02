@@ -70,7 +70,8 @@ spec:
           value: /etc/superset/superset_config.py
         image: superset
         ports:
-          - containerPort: 8088
+          - name: tcp-superset
+            containerPort: 8088
             protocol: TCP
         volumeMounts:
           - mountPath: /etc/superset
