@@ -203,7 +203,7 @@ metadata:
   name: argo-server
 spec:
   ports:
-  - name: hhtp-web
+  - name: http-web
     port: 2746
     targetPort: 2746
   selector:
