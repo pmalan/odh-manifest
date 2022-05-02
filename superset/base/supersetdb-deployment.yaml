@@ -48,7 +48,7 @@ spec:
         ports:
         - name: tcp-supsetdb
           containerPort: 5432
-          protocol: tcp
+          protocol: TCP
         readinessProbe:
           exec:
             command:
