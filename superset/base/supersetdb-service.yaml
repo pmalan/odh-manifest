@@ -6,7 +6,7 @@ metadata:
   name: supersetdb
 spec:
   ports:
-  - name: postgresql
+  - name: tcp-supersetdb
     port: 5432
     targetPort: 5432
     protocol: TCP
