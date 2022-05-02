@@ -12,7 +12,7 @@ spec:
       protocol: TCP
       port: 3306
       targetPort: 3306
-    - name: tc-mysql-exp
+    - name: tcp-mysql-exp
       protocol: TCP
       port: 9104
       targetPort: 9104
