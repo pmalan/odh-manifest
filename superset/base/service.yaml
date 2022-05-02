@@ -6,7 +6,7 @@ metadata:
     app: superset
 spec:
   ports:
-    - name: 8088-tcp
+    - name: tcp-superset
       port: 8088
       protocol: TCP
       targetPort: 8088
