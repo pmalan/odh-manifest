@@ -6,7 +6,7 @@ metadata:
     app: superset
 spec:
   port:
-    targetPort: 8088-tcp
+    targetPort: tcp-superset
   to:
     kind: Service
     name: superset
