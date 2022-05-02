@@ -18,7 +18,9 @@ spec:
         - name: mysqld-exporter
           image: mysqld-exporter
           ports:
-            - containerPort: 9104
+            - name: tcp-mysqld-exp
+              containerPort: 9104
+              protocol: TCP
           env:
             - name: DATA_SOURCE_NAME
               valueFrom:
@@ -43,7 +45,9 @@ spec:
         - name: mysql
           image: mysql
           ports:
-            - containerPort: 3306
+            - name: tcp-mysql
+              containerPort: 3306
+              protocol: TCP
           readinessProbe:
             exec:
               command:
