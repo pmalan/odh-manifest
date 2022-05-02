@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         deployment: hue
+        app: hue
+        version: v4.10.0
     spec:
       initContainers:
         - name: db-init
