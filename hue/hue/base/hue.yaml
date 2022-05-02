@@ -48,7 +48,9 @@ spec:
             - name: hive-site-xml
               mountPath: /etc/hive/conf/
           ports:
-            - containerPort: 8000
+            - name: http-hue
+              containerPort: 8000
+              protocol: TCP
           livenessProbe:
             httpGet:
               path: /desktop/debug/is_alive
