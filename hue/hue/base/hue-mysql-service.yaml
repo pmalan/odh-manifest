@@ -8,11 +8,11 @@ metadata:
       'mysql://{.spec.clusterIP}:{.spec.ports[?(.name=="mysql")].port}'
 spec:
   ports:
-    - name: mysql
+    - name: tcp-mysql
       protocol: TCP
       port: 3306
       targetPort: 3306
-    - name: exporter
+    - name: tc-mysql-exp
       protocol: TCP
       port: 9104
       targetPort: 9104
