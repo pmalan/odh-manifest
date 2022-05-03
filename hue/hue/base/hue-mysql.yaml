@@ -16,6 +16,8 @@ spec:
         deployment: hue-mysql
         app: hue
         version: v4.10.0
+      annotations:
+        sidecar.istio.io/inject: 'true'
     spec:
       containers:
         - name: mysqld-exporter
